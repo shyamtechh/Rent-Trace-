@@ -1,0 +1,17 @@
+column,type,source_or_method,confidence
+rent_2bhk_inr_verified,Verified,"ANAROCK Research via press (Siasat Mar & Aug 2025; Telangana Today): Gachibowli 2021-end 22,000; 2022-end 23,400; 2023-end 30,500; 2024-end 35,700; Q2-2025 36,600. HITEC City 2021 23,000; 2024-end 35,400. Kondapur 2025 = midpoint of ANAROCK Q1-2025 range 27,500-34,000",High for Gachibowli 2021-25; Medium others
+rent_2bhk_inr_estimated,Estimated,"Gachibowli 2016-20: backcast from 2021 using ASSUMED yoy (+5,+5,+4,-3,+2%) - no source. HITEC City: Gachibowli path x interpolated ratio. All other areas: Gachibowli path x my judgement ratio (e.g. Miyapur 0.52, Uppal 0.40). Emerging areas (Kokapet, Tellapur, Fin District, Narsingi, Nanakramguda) use ramping ratios",Low - replace with listing data (Housing.com/MagicBricks/99acres/NoBroker)
+rent_2bhk_inr_best,Derived,"Verified value if present, else estimate. Use this for modelling only after checking rent_confidence",-
+rent_yoy_pct_verified,Verified,Computed from consecutive verified Gachibowli points (2022-2024 only),High
+rent_yoy_pct_estimated,Estimated,Computed from rent_2bhk_inr_best where not verified,Low
+it_hub_proximity_tier_est,Estimated,"A = inside IT corridor, B = adjacent/feeder, C = outside. Analyst judgement",Medium
+new_construction_tier_est,Estimated,Qualitative. Basis: ANAROCK says West Hyderabad holds ~62% of launches (Q1 2025). Not an area-level measured %,Low-Medium
+metro_access_status / level,Verified (dates) + judgement (station proximity),Opening dates: themetrorailguy.com Phase 1 timeline (Nov-2017 Miyapur-Ameerpet-Nagole; Sep-2018 Ameerpet-LB Nagar; Mar-2019 Ameerpet-HITEC City; Nov-2019 Raidurg; Feb-2020 JBS-MGBS). Area-to-station mapping is from my knowledge - check on map,Medium
+city_metro_network_km_verified,Verified,"Cumulative from section opening dates; 2020+ uses reported ~69 km (section lengths sum to ~65 km, so small discrepancy)",Medium
+city_metro_daily_ridership_verified,Verified,"~100k/day (Dec 2017), 490k (Feb 2020), 536k (Jul 2023), 510k (Jan 2024). Other years not found",Medium
+telangana_it_employment_*,Verified 2022-23; Estimated others,"Telangana IT dept annual report via press: FY15 371,774; FY22 778,121; FY23 905,715 (+16.29%). 2016-21 = smooth geometric interpolation (real path uneven, Covid dip); 2024-25 = +7%/yr extrapolation. STATE level, not Hyderabad-only",Verified: High; Estimated: Low
+telangana_it_exports_*,Verified 2021-24; Estimated 2016-20,"FY21 1,45,522 cr; FY22 1,83,569 cr; FY23 2,41,275 cr (+31.44%); FY24 2,68,233 cr (Wikipedia citing state data - cross-check). FY15 66,276 cr used for interpolation. FY mapped to year of FY end",Verified: Medium-High
+telangana_real_gsdp_growth_pct_verified,Verified,"Real GSDP growth (2011-12 prices): FY16 11.58, FY17 9.39, FY18 10.15, FY19 10.50 (CAG SFAR), FY23 7.31, FY25 8.08 (StatisticsTimes). FY20-22, FY24 not retrieved - left blank",High
+hyderabad_ua_population_million_estimated,Estimated,Anchored on Census 2011 UA 7.75M and ~9.48M (2018 estimate); +2.9%/yr CAGR assumed. No yearly series exists. NET MIGRATION DATA NOT AVAILABLE - not included,Low-Medium
+hyderabad_housing_sales_units_verified,Verified,"ANAROCK: 47,485 (2022) -> 61,715 (2023)",High
+hyderabad_avg_resi_price_*,Verified,"ANAROCK: 4,620 -> ~5,750 INR/sqft (+24%) 2022->2023",High
